@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FragmentHome">
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_android">
+        <TextView
+            android:id="@+id/tv_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="AccountManager"
+            android:textColor="#083D5C"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_account"
+            android:background="#ffff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ln_acc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:onClick="onclick_account"
+                    android:id="@+id/imb_account"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_home"
+                    android:src="@drawable/ic_password_100"
+                    tools:ignore="OnClick" />
+                <ImageButton
+                    android:onClick="onclick_group"
+                    android:id="@+id/imb_group"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_home_group"
+                    android:src="@drawable/ic_documenf_100"
+                    tools:ignore="OnClick" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:onClick="onclick_info"
+                    android:id="@+id/imb_info"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_home_info"
+                    android:src="@drawable/ic_info_outline_black_100dp"
+                    tools:ignore="OnClick" />
+                <ImageButton
+                    android:onClick="onclick_logout"
+                    android:id="@+id/imb_logout"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_home_logout"
+                    android:src="@drawable/ic_shutdown_100"
+                    tools:ignore="OnClick" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
