@@ -56,7 +56,6 @@ public class FragmentCategory extends Fragment {
 
         final View dialogview = layoutInflater.inflate(R.layout.dialog_add_group, null);
         alertDialog.setView(dialogview);
-
         fabAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
